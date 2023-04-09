@@ -1,0 +1,31 @@
+@import '../../../../styles/theme';
+
+:host{ display: block;}
+
+.title{
+    display: block;
+    color: mat-color($nga-foreground, text);
+    border-bottom: 1 px solid mat-color($nga-foreground, divider);
+    font-size: mat-font-size($nga-typography, title);
+    font-weight: mat-font-weight($nga-typography, title);
+    line-height: 64px;
+    margin: 0;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.form{
+    font-size: 16 px;
+    padding: 0 24 px;
+}
+
+.form__field{
+    display: block;
+    margin-top: 16 px;
+    min-width: 250 px;
+}
+
+.form-submit{
+    margin-top: 16 px;
+    width: 100%;
+}

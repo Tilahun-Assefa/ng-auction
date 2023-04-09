@@ -1,0 +1,15 @@
+@import '@angular/material/_theming';
+
+//define palettes for the theme using material design palettes available in palette.scss 
+//imported above . for each palette , you can optinally specify a default, lighter, and darker hue
+$nga-primary: mat-palette($mat-cyan);
+$nga-accent: mat-palette($mat-cyan, A200, A100, A400);
+
+//the warn palette is optional (defaults to red)
+$nga-warn: mat-palette($mat-red);
+
+//create the theme object ( a Sass map containing all of palettes)
+$nga-theme: mat-light-theme($nga-primary, $nga-accent, $nga-warn);
+$nga-background: map-get($nga-theme, background);
+$nga-foreground: map-get($nga-theme, foreground );
+$nga-typography: mat-typography-config();
