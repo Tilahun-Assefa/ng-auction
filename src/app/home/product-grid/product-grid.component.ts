@@ -20,7 +20,8 @@ export class ProductGridComponent implements OnInit {
   ]);
   constructor(@Inject(API_BASE_URL) private readonly baseUrl: string, private readonly media: MediaObserver) {
     this.columns$ = this.media.asObservable().pipe(
-      map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias)),
+      map(
+        mc => <number>this.breakpointsToColumnsNumber.get("4")),
       startWith(3)
     );
   }

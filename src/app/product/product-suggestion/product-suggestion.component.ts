@@ -17,14 +17,14 @@ export class ProductSuggestionComponent implements OnInit {
   readonly breakpointsToColumnsNumber = new Map([
     ['xs', 2], ['sm', 3], ['md', 5], ['lg', 2], ['xl', 3]
   ])
-  constructor(@Inject(API_BASE_URL) private readonly baseUrl: string, 
-  private readonly media: MediaObserver) { 
+  constructor(@Inject(API_BASE_URL) private readonly baseUrl: string,
+  private readonly media: MediaObserver) {
     //if the inital screen size is xs Obsrvable Media doesnot emit an event
     //in the older version of flex-layout we used Observable Media, which is deprecated.
     //use mediaobserver instead
-    this.columns$  = this.media.media$
+    this.columns$  = this.media.asObservable()
     .pipe(
-      map(mc => <number>this.breakpointsToColumnsNumber.get(mc.mqAlias)), startWith(3)
+      map(mc => <number>this.breakpointsToColumnsNumber.get("3")), startWith(3)
     );
   }
 

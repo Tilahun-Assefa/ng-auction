@@ -4,7 +4,7 @@ import { Route, RouterModule } from '@angular/router';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatLegacyTabsModule as MatTabsModule } from '@angular/material/legacy-tabs'
+import { MatTabsModule } from '@angular/material/tabs'
 
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductGridComponent } from './product-grid/product-grid.component';

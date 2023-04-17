@@ -6,7 +6,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { ProductSuggestionComponent } from './product-suggestion/product-suggestion.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
+import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { RouterModule } from '@angular/router';
 
