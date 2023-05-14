@@ -8,6 +8,8 @@
     background-color: mat-color($nga-background, card);
     padding: 64px 24px;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .wrapper--lt-md{

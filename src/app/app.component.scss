@@ -17,8 +17,11 @@ mat-sidenav-container{
 
 .toolbar__logo-title-group{
     position: absolute;
+    justify-content: center;
+    align-items: center;
     right: 50%;
     left: 50%;
+    display: flex;
 
 }
 

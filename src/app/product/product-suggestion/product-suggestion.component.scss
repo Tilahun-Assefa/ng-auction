@@ -13,7 +13,9 @@
 }
 
 .tile__content{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -28,6 +30,8 @@
 .info__title{
     color: mat-color($nga-foreground, text);
     font-family: 'Abril Fatface', cursive;
+    display: flex;
+    justify-content: center;
     font-size: mat-font-size($nga-typography, title);
     font-weight: mat-font-weight($nga-typography, title);
     line-height: mat-line-height($nga-typography, title);

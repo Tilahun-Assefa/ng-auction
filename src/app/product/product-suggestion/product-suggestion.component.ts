@@ -24,7 +24,7 @@ export class ProductSuggestionComponent implements OnInit {
     //use mediaobserver instead
     this.columns$  = this.media.asObservable()
     .pipe(
-      map(mc => <number>this.breakpointsToColumnsNumber.get("3")), startWith(3)
+      map(mc => <number>this.breakpointsToColumnsNumber.get(mc[0].mqAlias)), startWith(3)
     );
   }
 
